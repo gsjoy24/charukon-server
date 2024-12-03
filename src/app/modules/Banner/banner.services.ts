@@ -1,5 +1,6 @@
 import httpStatus from 'http-status';
 import AppError from '../../errors/AppError';
+import deleteImage from '../../utils/deleteImage';
 import { TBanner } from './banner.interfaces';
 import { Banner } from './banner.model';
 
@@ -31,6 +32,9 @@ const deleteBanner = async (bannerId: string) => {
   if (!banner) {
     throw new AppError(httpStatus.NOT_FOUND, 'Banner not found!');
   }
+
+  // Delete image from cloudinary
+  await deleteImage(banner?.public_id as string);
 
   const deletedBanner = await Banner.findByIdAndDelete(bannerId);
   return deletedBanner;
