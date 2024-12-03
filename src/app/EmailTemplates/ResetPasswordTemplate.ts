@@ -20,7 +20,7 @@ const ResetPasswordTemplate = (name: string, email: string, link: string) => {
         </div>
         <div style="margin-top: 20px; padding: 10px; font-size: 12px; color: #777777; text-align: center;">
             <p>This email was sent to ${email}. If you received it by mistake, please disregard it.</p>
-            <p>&copy; 2024 Karukon. All rights reserved.</p>
+            <p>&copy; 2024 charukon. All rights reserved.</p>
         </div>
     </div>
 </body>

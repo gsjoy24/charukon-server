@@ -15,7 +15,7 @@ export const sendEmail = async (to: string, subject: string, html: string) => {
   });
 
   const mailData = {
-    from: `Karukon <${config.support_email}>`,
+    from: `charukon <${config.support_email}>`,
     to,
     subject,
     html,

@@ -11,10 +11,8 @@ const app: Application = express();
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
-  'https://karukon.com',
-  'https://dashboard.karukon.com',
-  'https://karukon.vercel.app',
-  'https://karukon-dashboard.vercel.app',
+  'https://charukon.vercel.app',
+  'https://charukon-dashboard.vercel.app',
 ];
 
 app.use(

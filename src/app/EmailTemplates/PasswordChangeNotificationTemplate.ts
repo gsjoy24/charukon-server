@@ -58,7 +58,7 @@ const PasswordChangeNotificationTemplate = (
         </div>
         <div class="footer">
             <p>This email was sent to ${email}. If you received it by mistake, please disregard it.</p>
-            <p>&copy; 2024 Karukon. All rights reserved.</p>
+            <p>&copy; 2024 charukon. All rights reserved.</p>
         </div>
     </div>
 </body>
