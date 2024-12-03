@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { AdminAuthRoutes } from '../modules/Admin-auth/admin-auth.routes';
 import { AdminRoutes } from '../modules/Admin/admin.routes';
 import { UserAuthRoutes } from '../modules/Auth/auth.routes';
+import BannerRoutes from '../modules/Banner/banner.routes';
 import CategoryRoutes from '../modules/Category/Category.routes';
 import { CouponRoutes } from '../modules/Coupon/Coupon.routes';
 import DashboardRoutes from '../modules/Dashboard/Dashboard.routes';
@@ -52,6 +53,10 @@ const moduleRoutes = [
   {
     path: '/dashboard',
     route: DashboardRoutes,
+  },
+  {
+    path: '/banners',
+    route: BannerRoutes,
   },
 ];
 
